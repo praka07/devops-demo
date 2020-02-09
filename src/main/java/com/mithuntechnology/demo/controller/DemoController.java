@@ -32,7 +32,7 @@ public class DemoController {
 
 	public ResponseEntity<byte[]> getImage(HttpServletResponse response) throws IOException {
 
-		byte[] bytes = StreamUtils.copyToByteArray(new ClassPathResource("image/mithun.jpg").getInputStream());
+		byte[] bytes = StreamUtils.copyToByteArray(new ClassPathResource("image/magnitia_logo.png").getInputStream());
 		return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(bytes);
 	}
 }
